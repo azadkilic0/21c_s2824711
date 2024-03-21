@@ -24,3 +24,24 @@ if __name__ == "__main__":
 #Task-4
 square_roots = [math.sqrt(number) for number in squares]
 print(square_roots)
+
+#Task-5
+class SquareGenerator:
+    def generate_squares(self, start, end):
+        """Generate a list of squares for a given range of numbers.
+
+        Raises:
+            ValueError: If end < start, indicating the range is invalid.
+        """
+        if end < start:
+            raise ValueError("End of range must be greater than or equal to the start.")
+        return [x ** 2 for x in range(start, end + 1)]
+# Example usage:
+if __name__ == "__main__":
+    square_generator = SquareGenerator()
+    try:
+        squares = square_generator.generate_squares(1, 10)
+        print(squares)
+        squares_invalid = square_generator.generate_squares(10, 1)  # This should raise an exception
+    except ValueError as error:
+        print(f"Error: {error}")
