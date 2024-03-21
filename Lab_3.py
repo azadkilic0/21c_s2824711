@@ -71,7 +71,7 @@ cubes = cubic_gen.generate_squares(1, 5)  # This will generate cubes now
 print("Task 8:")
 print(cubes)
 
-#Task-9
+#Task-10
 from square_generator_pkg.CubicGenerator import CubicGenerator
 print("Task 9:")
 def main():
