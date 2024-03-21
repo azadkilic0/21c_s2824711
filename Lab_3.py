@@ -73,7 +73,7 @@ print(cubes)
 
 #Task-10
 from square_generator_pkg.CubicGenerator import CubicGenerator
-print("Task 9:")
+print("Task 10:")
 def main():
     # Create an instance of CubicGenerator
     cubic_gen = CubicGenerator()
