@@ -62,6 +62,14 @@ if __name__ == "__main__":
     except ValueError as error:
         print(f"Error: {error}")
 
-#Task-7
+#Task-8
+from square_generator_pkg.CubicGenerator import CubicGenerator
+
+# Example usage
+cubic_gen = CubicGenerator()
+cubes = cubic_gen.generate_squares(1, 5)  # This will generate cubes now
+print("Task 8:")
+print(cubes)
+
 
 
