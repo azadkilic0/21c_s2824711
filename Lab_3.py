@@ -71,5 +71,24 @@ cubes = cubic_gen.generate_squares(1, 5)  # This will generate cubes now
 print("Task 8:")
 print(cubes)
 
+#Task-9
+from square_generator_pkg.CubicGenerator import CubicGenerator
+print("Task 9:")
+def main():
+    # Create an instance of CubicGenerator
+    cubic_gen = CubicGenerator()
+
+    # Use the instance to generate cubes (through the overridden method)
+    # Note: The method is named generate_squares for consistency with the superclass,
+    # but it generates cubes in this subclass.
+    try:
+        cubes = cubic_gen.generate_squares(1, 5)
+        print("Cubes from 1 to 5:", cubes)
+    except ValueError as e:
+        print(f"Error: {e}")
+if __name__ == "__main__":
+    main()
+
+
 
 

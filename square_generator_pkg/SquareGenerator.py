@@ -1,10 +1,17 @@
-class SquareGenerator:
-    def generate_squares(self, start, end):
-        """Generate a list of squares for a given range of numbers.
+from abc import ABC, abstractmethod
 
-        Raises:
-            ValueError: If end < start, indicating the range is invalid.
+
+class SquareGenerator(ABC):
+    @abstractmethod
+    def generate_squares(self, start, end):
+        """Abstract method to generate a sequence of squares from start to end.
+        Must be implemented by subclasses.
+
+        Parameters:
+            start (int): The starting number of the range.
+            end (int): The ending number of the range.
+
+        Returns:
+            list: A list of squares from start to end.
         """
-        if end < start:
-            raise ValueError("End of range must be greater than or equal to the start.")
-        return [x ** 2 for x in range(start, end + 1)]
+        pass
