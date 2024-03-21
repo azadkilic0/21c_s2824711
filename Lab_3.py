@@ -1,5 +1,6 @@
 import math
 
+
 #Task-1
 squares = [x**2 for x in range(1, 11)]
 print( "Task 1 :",squares)
@@ -60,5 +61,7 @@ if __name__ == "__main__":
         squares_invalid = square_generator.generate_squares(10, 1)
     except ValueError as error:
         print(f"Error: {error}")
+
+#Task-7
 
 
